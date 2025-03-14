@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"><!-- Conexion a la hoja de estilos css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</div>
+
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="main-menu">
+  
+  <!-- Barra de búsqueda pequeña-->
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar...">
+    <button><i class="fa fa-search"></i></button>
+  </div>
+
+  <ul>
+    <li>
+      <a href="inicio.html">
+        <i class="fa fa-home nav-icon"></i>
+        <span class="nav-text">Home</span>
+      </a>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#"><i class="fa fa-list nav-icon"></i> <span class="nav-text">Categorías</span></a>
+      <ul class="submenu">
+        
+        <i class="fa-solid fa-music"></i>
+        <li><a href="{{ url_for('musica') }}">Música</a></li>
+        <li><a href="{{ url_for('cultura') }}">Cultura</a></li>
+        <li><a href="{{ url_for('tecnologia') }}">Tecnología</a></li>
+        <li><a href="{{ url_for('deportes') }}">Deporte</a></li>   
+        <li><a href="#">Otros</a></li>
+      </ul>
+    </li>
+    
+
+    <li>
+      <a href="#">
+        <i class="fa fa-pen nav-icon"></i>
+        <span class="nav-text">Events</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa fa-envelope nav-icon"></i>
+        <span class="nav-text">Feedback</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa fa-bell nav-icon"></i>
+        <span class="nav-text">Notification</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa fa-user nav-icon"></i>
+        <span class="nav-text">User</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="logout">
+    <li>
+      <a href="#">
+        <i class="fa fa-cogs nav-icon"></i>
+        <span class="nav-text">Settings</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa fa-right-from-bracket nav-icon"></i>
+        <span class="nav-text">Logout</span>
+      </a>
+    </li>  
+  </ul>
+</nav>
+
+<div class="titulo">
+    <h1>T E C N O L O G I A</h1>
+</div>
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="blob-c">
+    <div class="shape-blob"></div>
+    <div class="shape-blob one"></div>
+    <div class="shape-blob two"></div>
+    <div class="shape-blob three"></div>
+    <div class="shape-blob four"></div>
+    <div class="shape-blob five"></div>
+    <div class="shape-blob six"></div>
+  </div>
+
+
+  <!-- Sección de tarjetas -->
+  <section class="card-grid">
+    
+    <!-- Primera fila -->
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/Hackathon.jpg') }}" alt="Hackathon">
+      <div class="card-content">
+        <p>Hackathon</p>
+        <p>La nueva edición de Hackathon se llevará a cabo en el centro de convenciones el 5 de abril. Entrada gratuita</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/IBM.jpg') }}" alt="IBM">
+      <div class="card-content">
+        <p>IBM</p>
+        <p>Nueva campaña de innovación tecnológica. Centro de cultura de Grecia. Hora 10am. Cupos limitados</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/futbol.jpeg') }}" alt="futbol">
+      <div class="card-content">
+        <p>Futbol</p>
+        <p>Partido Liga vs Cartagines. Estadio Jose Rafael. Hora 11:00am. Fecha: domingo 16 de marzo</p>
+      </div>
+    </div>
+
+    <!-- Segunda fila -->
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/deportes.jpg') }}" alt="Deportes">
+      <div class="card-content">
+        <p>Deportes</p>
+        <p>Eventos deportivos nacionales e internacionales.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="cine.jpg" alt="Cine">
+      <div class="card-content">
+        <p>Cine</p>
+        <p>Estrenos y festivales de cine.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/gastronomia.jpg') }}" alt="Gastronomía">
+      <div class="card-content">
+        <p>Gastronomía</p>
+        <p>Festivales y eventos gastronómicos.</p>
+      </div>
+    </div>
+
+    <!-- Tercera fila -->
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/moda.jpg') }}" alt="Moda">
+      <div class="card-content">
+        <p>Moda</p>
+        <p>Eventos de moda y pasarelas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/viajes.jpg') }}" alt="Viajes">
+      <div class="card-content">
+        <p>Viajes</p>
+        <p>Destinos y ferias turísticas.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='img/videojuegos.jpg') }}" alt="Videojuegos">
+      <div class="card-content">
+        <p>Videojuegos</p>
+        <p>Lanzamientos y torneos de gaming.</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+<!-- Pie de pàgina -->
+<footer>
+    <p class="footer"> &copy; 2025. Todos los derechos reservados</p>
+</footer>
+
+</html>
