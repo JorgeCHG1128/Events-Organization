@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styleLogin.css') }}"><!-- Conexion a la hoja de estilos css -->
 </head>
 <body>
-    <form class="container" action="/login" method="post">
+    <form class="container" id="loginForm">
         <h1 class="Login-title">Login</h1>
 
         <section class="input-box">
-            <input type="text" id="email" name="email" placeholder="Email" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
             <i class='bx bxs-user'></i>
         </section>
         <section class="input-box">
@@ -29,7 +29,7 @@
             <a class="forgot-password" href="#"> <h5>Forgot password?</h5> </a>
         </section>
 
-        <button class="login-button" type="submit" name="inicio" value="inicio">
+        <button class="login-button" type="submit">
             Login
         </button>
 
@@ -37,33 +37,14 @@
             Register
         </button>
         
-        <!--<a class="login-button" href="{{ url_for('register') }}">
-            Register
-        </a>-->
-
-        <!--<button class="login-button" type="submit" name="register" value="true">
-            Register
-        </button>-->
-
         <h5 class="dont-have-an-account">
             Don't have an account?
-            <a href="/register"> <b>Register as Guest</b> </a>
+            <a href="{{ url_for('mostrar_registro') }}"> <b>Register as Guest</b> </a>
         </h5>
 
-        {% if message %}
-        <div>
-            <h2 style="color: green;">{{ message }}</h2>
-        </div>
-        {% endif %}
-
-        {% if error %}
-        <div>
-            <h3 style="color: red;">{{ error }}</h3>
-        </div>
-        {% endif %}
+        <div id="messageContainer"></div>
     </form>  
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-
 </body>
 </html>
