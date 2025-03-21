@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ event.NameEvent }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ event.NameEvent }}</h1>
+    <p><strong>Descripción:</strong> {{ event.Description }}</p>
+    <p><strong>Fecha:</strong> {{ event.Date }}</p>
+    <p><strong>Lugar:</strong> {{ event.Location }}</p>
+    <a href="/">Volver al inicio</a>
+</body>
+</html>
