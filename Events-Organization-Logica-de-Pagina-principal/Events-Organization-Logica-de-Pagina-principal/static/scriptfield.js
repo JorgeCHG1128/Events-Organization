@@ -2,19 +2,19 @@
 // Precios base por tipo de campo
 const precios = {
     "General": {
-        "Adulto": 50,
-        "Niño": 25,
-        "Tercera Edad": 35
+        "Adulto": null,
+        "Niño": null,
+        "Tercera Edad": null
     },
     "VIP": {
-        "Adulto": 120,
-        "Niño": 60,
-        "Tercera Edad": 90
+        "Adulto": null,
+        "Niño": null,
+        "Tercera Edad": null
     },
     "Platinum": {
-        "Adulto": 200,
-        "Niño": 100,
-        "Tercera Edad": 150
+        "Adulto": null,
+        "Niño": null,
+        "Tercera Edad": null
     }
 };
 
