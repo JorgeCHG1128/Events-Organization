@@ -339,3 +339,63 @@
 2025-03-20 23:41:45,290 - INFO - 127.0.0.1 - - [20/Mar/2025 23:41:45] "[36mGET /static/img/videojuegos.jpg HTTP/1.1[0m" 304 -
 2025-03-20 23:41:47,247 - INFO - 127.0.0.1 - - [20/Mar/2025 23:41:47] "GET /field?name_event=Hackathon HTTP/1.1" 200 -
 2025-03-20 23:41:47,306 - INFO - 127.0.0.1 - - [20/Mar/2025 23:41:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-31 17:30:08,741 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.18.176.89:5000
+2025-03-31 17:30:08,743 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-31 17:30:08,769 - INFO -  * Restarting with stat
+2025-03-31 17:30:12,749 - WARNING -  * Debugger is active!
+2025-03-31 17:30:12,791 - INFO -  * Debugger PIN: 118-651-039
+2025-03-31 17:30:23,847 - INFO - 127.0.0.1 - - [31/Mar/2025 17:30:23] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-31 17:30:24,209 - DEBUG - Cargando la página de login...
+2025-03-31 17:30:24,284 - INFO - 127.0.0.1 - - [31/Mar/2025 17:30:24] "GET /login HTTP/1.1" 200 -
+2025-03-31 17:30:26,272 - INFO - 127.0.0.1 - - [31/Mar/2025 17:30:26] "GET /static/script.js HTTP/1.1" 200 -
+2025-03-31 17:30:26,404 - INFO - 127.0.0.1 - - [31/Mar/2025 17:30:26] "GET /static/styleLogin.css HTTP/1.1" 200 -
+2025-03-31 17:30:27,113 - INFO - 127.0.0.1 - - [31/Mar/2025 17:30:27] "GET /static/img/3452442.jpg HTTP/1.1" 200 -
+2025-03-31 17:30:27,622 - INFO - 127.0.0.1 - - [31/Mar/2025 17:30:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-31 17:34:25,320 - INFO - 127.0.0.1 - - [31/Mar/2025 17:34:25] "GET /registro HTTP/1.1" 200 -
+2025-03-31 17:34:25,508 - INFO - 127.0.0.1 - - [31/Mar/2025 17:34:25] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-03-31 17:34:25,508 - INFO - 127.0.0.1 - - [31/Mar/2025 17:34:25] "GET /static/styleRegistro.css HTTP/1.1" 200 -
+2025-03-31 17:34:25,874 - INFO - 127.0.0.1 - - [31/Mar/2025 17:34:25] "[36mGET /static/img/3452442.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:35:49,564 - INFO - 127.0.0.1 - - [31/Mar/2025 17:35:49] "[31m[1mPOST /registro HTTP/1.1[0m" 409 -
+2025-03-31 17:35:57,533 - INFO - 127.0.0.1 - - [31/Mar/2025 17:35:57] "[31m[1mPOST /registro HTTP/1.1[0m" 409 -
+2025-03-31 17:36:03,848 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:03] "[31m[1mPOST /registro HTTP/1.1[0m" 409 -
+2025-03-31 17:36:04,374 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:04] "[31m[1mPOST /registro HTTP/1.1[0m" 409 -
+2025-03-31 17:36:04,895 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:04] "[31m[1mPOST /registro HTTP/1.1[0m" 409 -
+2025-03-31 17:36:05,402 - INFO - ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: registro
+2025-03-31 17:36:05,409 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:05] "[31m[1mPOST /registro HTTP/1.1[0m" 429 -
+2025-03-31 17:36:08,040 - DEBUG - Cargando la página de login...
+2025-03-31 17:36:08,044 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:08] "GET /login HTTP/1.1" 200 -
+2025-03-31 17:36:08,481 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:08] "[36mGET /static/styleLogin.css HTTP/1.1[0m" 304 -
+2025-03-31 17:36:08,688 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-03-31 17:36:09,153 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:09] "[36mGET /static/img/3452442.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:36:20,590 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:20] "POST /login HTTP/1.1" 200 -
+2025-03-31 17:36:21,301 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:21] "GET / HTTP/1.1" 200 -
+2025-03-31 17:36:21,505 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:21] "GET /static/img/deportes.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:21,964 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:21] "GET /static/styles.css HTTP/1.1" 200 -
+2025-03-31 17:36:22,023 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-03-31 17:36:22,183 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "GET /static/img/musica.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:22,272 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "GET /static/img/tecnologia.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:22,340 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "GET /static/img/cultura.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:22,705 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "GET /static/img/cine.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:22,860 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "GET /static/img/gastronomia.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:22,908 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "GET /static/img/moda.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:22,973 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:22] "GET /static/img/viajes.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:23,245 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:23] "GET /static/img/videojuegos.jpg HTTP/1.1" 200 -
+2025-03-31 17:36:29,617 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:29] "GET /musica HTTP/1.1" 200 -
+2025-03-31 17:36:29,789 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-31 17:36:30,121 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-03-31 17:36:30,338 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "[36mGET /static/img/gastronomia.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:36:30,608 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "GET /static/img/reggaeconcert.jpeg HTTP/1.1" 200 -
+2025-03-31 17:36:30,638 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "GET /static/img/shawn.jpeg HTTP/1.1" 200 -
+2025-03-31 17:36:30,808 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "GET /static/img/Cuarteto%20de%20nos.jpeg HTTP/1.1" 200 -
+2025-03-31 17:36:30,822 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "[36mGET /static/img/deportes.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:36:30,970 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "[36mGET /static/img/moda.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:36:30,985 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:30] "[36mGET /static/img/viajes.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:36:31,074 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:31] "[36mGET /static/img/cine.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:36:31,254 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:31] "[36mGET /static/img/videojuegos.jpg HTTP/1.1[0m" 304 -
+2025-03-31 17:36:33,367 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:33] "GET /field?name_event=Reggae+Concert HTTP/1.1" 200 -
+2025-03-31 17:36:33,608 - INFO - 127.0.0.1 - - [31/Mar/2025 17:36:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-31 17:37:29,502 - INFO - 127.0.0.1 - - [31/Mar/2025 17:37:29] "GET /field?name_event=Reggae+Concert HTTP/1.1" 200 -
+2025-03-31 17:37:29,601 - INFO - 127.0.0.1 - - [31/Mar/2025 17:37:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
