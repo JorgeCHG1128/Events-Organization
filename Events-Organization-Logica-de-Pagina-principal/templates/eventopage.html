@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"><!-- Conexion a la hoja de estilos css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</div>
+
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="main-menu">
+  
+  <!-- Barra de búsqueda pequeña-->
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar...">
+    <button><i class="fa fa-search"></i></button>
+  </div>
+
+  <ul>
+    <li>
+      <a href="#">
+        <i class="fa fa-home nav-icon"></i>
+        <span class="nav-text">Home</span>
+      </a>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#"><i class="fa fa-list nav-icon"></i> <span class="nav-text">Categorías</span></a>
+      <ul class="submenu">
+        
+        <i class="fa-solid fa-music"></i>
+        <li><a href="{{ url_for('musica') }}">Música</a></li>
+        <li><a href="{{ url_for('cultura') }}">Cultura</a></li>
+        <li><a href="{{ url_for('tecnologia') }}">Tecnología</a></li>
+        <li><a href="{{ url_for('deportes') }}">Deporte</a></li>        
+        <li><a href="#">Otros</a></li>
+      </ul>
+    </li>
+    
+
+    <li>
+      <a href="feedback.html">
+        <i class="fa fa-pen nav-icon"></i>
+        <span class="nav-text">Events</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa fa-envelope nav-icon"></i>
+        <span class="nav-text">Feedback</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa fa-bell nav-icon"></i>
+        <span class="nav-text">Notification</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa fa-user nav-icon"></i>
+        <span class="nav-text">User</span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="logout">
+    <li>
+      <a href="#">
+        <i class="fa fa-cogs nav-icon"></i>
+        <span class="nav-text">Settings</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ url_for('mostrar_login') }}">
+        <i class="fa fa-right-from-bracket nav-icon"></i>
+        <span class="nav-text">Logout</span>
+      </a>
+    </li>  
+  </ul>
+</nav>
+
+    <img src="{{ url_for('cultura') }}" alt="Evento" class="header-image">
+
+    <div class="event-content">
+        <h1>Nombre del Evento</h1>
+        <p>
+            Información del evento como: nombre de organizador, patrocinadores, lugar y ubicación exacta, fecha y hora,
+            cantidad de asistentes, precio por entradas, cantidad de espacios disponibles, etc.
+        </p>
+
+        <a href="field.html" class="buy-btn">Comprar Entradas</a>
+    </div>
+
+</body>
+</html>
