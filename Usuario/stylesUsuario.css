@@ -1,0 +1,454 @@
+body {
+    background: linear-gradient(135deg, #2c3e50, #5E8CB8, #2c3e50); /* gradiente mejorado con tres colores */
+    background-size: 400% 400%;
+    animation: gradientMovement 15s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 25px;
+    min-height: 100vh;
+}
+
+@keyframes gradientMovement {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-left: 6px solid #8e44ad;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+    animation: fadeIn 0.8s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #a29bfe, transparent);
+    opacity: 0.7;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ecf0f1;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+label:hover {
+    color: #a29bfe;
+    transform: translateX(3px);
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #6c5ce7;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    font-size: 16px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 5px rgba(108, 92, 231, 0.2);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #a29bfe;
+    outline: none;
+    box-shadow: 0 0 12px rgba(162, 155, 254, 0.6), inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+button, .file-input-button {
+    background: linear-gradient(to right, #6c5ce7, #8e44ad);
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+}
+
+button::before, .file-input-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+}
+
+button:hover, .file-input-button:hover {
+    background: linear-gradient(to right, #a29bfe, #9b59b6);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+button:hover::before, .file-input-button:hover::before {
+    left: 100%;
+}
+
+button:active, .file-input-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #ff7675, #e74c3c);
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, #636e72, #2d3436);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(to right, #b2bec3, #636e72);
+}
+
+.logout-btn {
+    background: linear-gradient(to right, #95a5a6, #7f8c8d);
+}
+
+.logout-btn:hover {
+    background: linear-gradient(to right, #dfe6e9, #b2bec3);
+}
+
+.table {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    color: #ecf0f1;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+th {
+    background-color: rgba(142, 68, 173, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+
+th::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #a29bfe, transparent);
+}
+
+tr:hover td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.search-bar input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #a29bfe;
+    border-radius: 12px;
+    color: #fff;
+    padding: 14px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 15px rgba(142, 68, 173, 0.5);
+    transform: translateY(-2px);
+}
+
+.profile-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #3498db;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.profile-preview:hover {
+    transform: scale(1.05);
+}
+.student-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.hidden {
+    display: none;
+}
+.btn-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.file-input-container {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.form-card {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #6c5ce7, #8e44ad, #a29bfe, #6c5ce7);
+    background-size: 400% 400%;
+    animation: borderGradient 8s ease infinite;
+    z-index: -1;
+    border-radius: 18px;
+    opacity: 0.5;
+}
+
+@keyframes borderGradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+.form-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.form-card:hover::before {
+    opacity: 0.8;
+}
+
+.form-card-title {
+    color: #a29bfe;
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+}
+
+.form-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to right, #a29bfe, transparent);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Nuevos estilos para mejorar la experiencia de usuario */
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #6c5ce7;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    font-size: 16px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #a29bfe 50%), 
+                      linear-gradient(135deg, #a29bfe 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), 
+                         calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    border-color: #a29bfe;
+    outline: none;
+    box-shadow: 0 0 12px rgba(162, 155, 254, 0.6);
+    transform: translateY(-2px);
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #6c5ce7;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #fff;
+    font-size: 16px;
+    min-height: 120px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #a29bfe;
+    outline: none;
+    box-shadow: 0 0 12px rgba(162, 155, 254, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Efectos de loadings y spinners */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Tooltips */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+}
